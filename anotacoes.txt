@@ -1,0 +1,32 @@
+Para interpretar os atalhos criados através do arquivo "tsconfig.json" deve-se importar a biblioteca:
+> yarn add tsconfig-paths -D
+
+Logo após alterar no package.json para o seguinte formato:
+> ts-node-dev -r tsconfig-paths/register --inspect --transpileOnly --ignore-watch node_modules src/shared/infra/http/server.ts
+
+SOLID:
+Single Responsability Principle
+Open Closed Principle
+Liskov Subtitution Principle
+Interface Segregation Principle
+Dependency Invertion Principle
+
+TESTES 
+Para a instalação do Jest:
+> yarn add jest --init 
+
+Para permitir ao Jest ler código no formato Typescript:
+> yarn add ts-jest -D 
+
+Instalar o pacote de tipagens para o Jest:
+> yarn add @types/jest -D
+
+Amazon S3,
+Google Cloud Storage,
+Digital Ocean Spaces / Serviços na nuvem para armazenamento de imagens.
+CDN - Content Delivery Network.
+
+Escala vertical - Aumenta os recursos;
+Escala horizontal - Cria um novo servidor (distribuição de carga);
+
+Para cache foi utilizado o REDIS. Instalar um novo container no DOCKER.
